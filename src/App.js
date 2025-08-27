@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import search from './components/search/search';
+import Search from './components/search/search.js';
 
 function App() {
   const handleOnSearchChange = (searchData) => {
@@ -8,7 +8,7 @@ function App() {
   };
   return (
     <div className="container">
-      <search onSearchChange = {handleOnSearchChange}/>
+      <Search onSearchChange = {handleOnSearchChange}/>
     </div>
   );
 }
