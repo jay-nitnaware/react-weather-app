@@ -3,9 +3,12 @@ import './App.css';
 import search from './components/search/search';
 
 function App() {
+  const handleOnSearchChange = (searchData) => {
+    console.log(searchData);
+  };
   return (
     <div className="container">
-      <search />
+      <search onSearchChange = {handleOnSearchChange}/>
     </div>
   );
 }
